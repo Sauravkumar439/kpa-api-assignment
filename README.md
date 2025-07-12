@@ -13,16 +13,12 @@ This project implements two RESTful APIs as per the KPA assignment requirements:
 - PostgreSQL
 - Token Authentication (DRF built-in)
 
-
 ## API Credentials for Testing
 
 Use the following credentials (provided in assignment):
 
 Phone number: 7760873976
 Password: to_share@123
-
-
----
 
 ## Installation & Setup
 
@@ -40,10 +36,6 @@ pip install -r requirements.txt
 ### 3. Configure PostgreSQL
 
 Create a PostgreSQL database called kpa_db and update this in core/settings.py:
-
-python
-Copy
-Edit
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -72,9 +64,6 @@ POST /api/user/login/
 
 ### Request Body:
 
-    json
-    Copy
-    Edit
     {
     "phone_number": "7760873976",
     "password": "to_share@123"
@@ -91,17 +80,11 @@ POST /api/user/login/
 ### POST /api/kpa/form_data/
 ### Headers:
 
-pgsql
-Copy
-Edit
 Authorization: Token your_token_here
 Content-Type: application/json
 
 ### Request Body:
 
-json
-Copy
-Edit
 {
   "department": "Engineering",
   "kpa_title": "Performance and Delivery",
@@ -110,9 +93,6 @@ Edit
 
 ### Response:
 
-json
-Copy
-Edit
 {
   "id": 1,
   "user": 1,
