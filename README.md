@@ -36,16 +36,17 @@ pip install -r requirements.txt
 ### 3. Configure PostgreSQL
 
 Create a PostgreSQL database called kpa_db and update this in core/settings.py:
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'kpa_db',
-        'USER': 'postgres',
-        'PASSWORD': 'yourpassword',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+                'default': {
+                    'ENGINE': 'django.db.backends.postgresql',
+                    'NAME': 'kpa_db',
+                    'USER': 'postgres',
+                    'PASSWORD': 'yourpassword',
+                    'HOST': 'localhost',
+                    'PORT': '5432',
+                            }
+            }
 
 
 ### 4. Run migrations and create superuser
