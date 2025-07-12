@@ -5,8 +5,6 @@ This project implements two RESTful APIs as per the KPA assignment requirements:
 1. **POST /api/user/login/** – Login using phone number and password  
 2. **POST /api/kpa/form_data/** – Submit a KPA form (requires authentication)
 
----
-
 ## Tech Stack
 
 - Python 3.x
@@ -15,7 +13,6 @@ This project implements two RESTful APIs as per the KPA assignment requirements:
 - PostgreSQL
 - Token Authentication (DRF built-in)
 
----
 
 ## API Credentials for Testing
 
